@@ -10,7 +10,7 @@ export default function Tasks({ todo, setTodo }) {
 
   const deleteTask = async (_id) => {
     try {
-      await fetch(`http://localhost:8080/task/${_id}`, {
+      await fetch(`https://todo-app-using-react-and-mongodb.onrender.com/task/${_id}`, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       });
