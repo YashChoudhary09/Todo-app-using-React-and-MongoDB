@@ -14,7 +14,7 @@ export default function Todo() {
 
     useEffect(() => {
         async function fetchData() {
-            const data = await fetch("http://localhost:8080/task");
+            const data = await fetch("https://todo-app-using-react-and-mongodb.onrender.com");
             const result = await data.json();
 
             setTodo(result);
@@ -29,7 +29,8 @@ export default function Todo() {
 
     const addTask = async () => {
         if(task === "")return;
-      let fetchedData =  await fetch("http://localhost:8080/task", {
+    let fetchUrl = "https://todo-app-using-react-and-mongodb.onrender.com";
+      let fetchedData =  await fetch(`${fetchUrl}/task`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ task: task,date: new Date() ,isDone:false})

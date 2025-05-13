@@ -25,7 +25,8 @@ export default function Tasks({ todo, setTodo }) {
 
   const markDone = async(_id)=>{
     try{
-          await fetch(`http://localhost:8080/task/${_id}`, {
+        let fetchUrl = "https://todo-app-using-react-and-mongodb.onrender.com";
+          await fetch(`${fetchUrl}/task/${_id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
       });
