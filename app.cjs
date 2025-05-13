@@ -2,10 +2,11 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
+require("dotenv").config();
 
 app.use(cors());
 app.use(express.json());
-
+const dbUrl = process.env.ATLASDB_URL;
 main()
   .then(() => {
     console.log("Connected successfully!");
@@ -15,7 +16,7 @@ main()
   });
 
 async function main() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/Todo");
+  await mongoose.connect(dbUrl);
 }
 
 const taskSchema = new mongoose.Schema({
