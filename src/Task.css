@@ -1,0 +1,90 @@
+.task-box{
+      height: 20rem;
+    width: 27rem;
+    margin-top: 1rem;
+    overflow-x: auto;
+    box-shadow: 10px 10px 15px #89A8B2;
+}
+
+.task-box::-webkit-scrollbar{
+    width: 8px;
+}
+.task-box::-webkit-scrollbar-thumb{
+    background-color: #89A8B2;
+    border-radius: 4px;
+}
+
+.task-div{
+    display: flex;
+    justify-content:space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3px;
+  background-color: #B3C8CF;
+ }
+.task{ 
+    background-color: #B3C8CF; /* Background color for the full list */
+    padding: 10px;
+    border-radius: 10px;
+     list-style-position: inside;
+     margin: 0rem 0.4rem 0.5rem 0.4rem;
+   border: 1px solid #89A8B2;
+   box-shadow: 0px 4px 6px #89A8B2;
+}
+.task-list{
+      margin-bottom: 0.4rem;
+    padding: 5px; /* Adds spacing inside each list item */
+    border-radius: 4px;
+    color: black;
+    text-align: start;
+    padding-bottom: 4px;
+    width: 17rem;
+    overflow-y: auto;
+    border: 1.5px solid #89A8B2;
+    box-shadow: 4px 4px 6px #89A8B2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.task-list::-webkit-scrollbar{
+     height:6px;
+   
+}
+
+.task-list::-webkit-scrollbar-thumb{
+      background-color: #89A8B2;
+    border-radius: 10px;
+  
+}
+
+.delete-btn{
+    color: #76a7b7 !important;
+    padding: 1px;
+}
+
+.date-span{
+    font-size: 0.9rem;
+   margin-right: 4rem;
+   color: black;
+   text-decoration: underline;
+}
+
+.delete-btn:hover{
+    box-shadow: 4px 4px 7px #89A8B2;
+}
+
+.time-span{
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+}
+
+.checkMark{
+   text-decoration: line-through;
+}
+
+.checkBox{
+    color: #76a7b7 !important;
+}

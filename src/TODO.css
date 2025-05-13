@@ -1,0 +1,22 @@
+.todo{
+    background-color: #B3C8CF;
+}
+
+.search-box{
+    height: 5rem;
+    width: 27rem;
+    background-color: #89A8B2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 10px 10px 15px #B3C8CF;
+}
+.task-btn{
+    background-color: #B3C8CF !important;
+    color: black !important;
+}
+
+/* .text-feild{
+    color: #89A8B2 !important;
+    border-color: #89A8B2 !important;
+} */
